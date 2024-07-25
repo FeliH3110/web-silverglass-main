@@ -148,7 +148,9 @@ header{
         margin: 0;
         border-radius: 0;
     }
-
+    .submenu{
+        display: none;
+    }
 }
 
 /*------------ FIN HEADER------------*/
