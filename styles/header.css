@@ -1,0 +1,154 @@
+/* HEADER NUEVO */
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+header{
+   padding: 32px 0;
+   background-color:#09569a; 
+   height: 150px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo img{
+    height: 150px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    width: 140px;
+}
+
+.menu .navbar ul li a:hover{
+    font-weight: bold;
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 45px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*-----SUBMENU----- */
+
+.nav li ul{
+    display: none;
+    font-weight: 500;
+    padding: 0px;
+    position: absolute;
+    background-color:#D9D9D9;
+    color: #09569a;
+    border-radius: 0 0 10px 10px;
+    width: 155px;
+}
+.nav li ul a{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #09569a;
+}
+.menu .navbar .submenu a{
+    color: #09569a;
+    padding: 10px;
+    width: 155px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+.nav > li{
+    float: left;
+}
+
+#nav-presupuesto{
+    font-weight: 500;
+    color: #09569a;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 250px;
+    margin-left: 10px;
+}
+
+#nav-presupuesto:hover{
+    font-weight: bold;
+}
+
+/* ----------configuracion responsive------------------------ */
+
+@media(max-width:991px){
+    header{
+        height: 130px;
+    }
+    .menu{
+        padding: 5px 30px 0px 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding:50px 0;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #D9D9D9;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .logo img{
+        height:120px;
+    }
+
+    .menu .navbar ul li a{
+        width: 100%;
+        color: #09569a;
+        font-weight: 500;
+    }
+    #nav-presupuesto{
+        background-color:#09569a ;
+        font-weight: 500;
+        color: #D9D9D9;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+}
+
+/*------------ FIN HEADER------------*/

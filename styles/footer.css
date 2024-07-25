@@ -1,0 +1,85 @@
+/*------------FOOTER------------*/
+footer{
+    display: flex;
+    min-height: 150px;
+    background: #09569a;
+    align-items: top;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+}
+
+footer img{
+    height: 150px;
+}
+
+.contacto-footer{
+    display: block;
+}
+.vinculo-footer{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+}
+
+.vinculo-footer a{
+    color:white
+}
+.vinculo-footer a img{
+    height: 30px;
+    margin-right: 10px;
+    transition: 200ms;
+}
+
+.productos-footer p a{
+    color: white;
+    display: block;
+    padding: 10px 0 0 0;
+    font-size: 18px;
+}
+
+footer a:hover{
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.vinculo-footer img:hover{
+    height: 35px;
+    transition: 200px;
+}
+
+@media(max-width:991px){
+    footer{
+        padding-bottom: 10px;
+        padding-top: 0;
+        display: block;
+    }
+    .logo-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer h3{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .vinculo-footer{
+        width: auto;
+        height: auto;
+        display: flow;
+        text-align: center;
+    }
+
+    .productos-footer p a{
+        text-align: center;
+    }
+    .vinculo-footer a img{
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+/*------------ FIN FOOTER------------*/

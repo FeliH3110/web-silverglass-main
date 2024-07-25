@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles/contacto-style.css">
+    <link rel="shortcut icon" href="imagenes/Icono pestaña/Icono bandera sin fondo.png" />
+
+
+    <!--Importacion fuente personalizada-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="imagenes/Logo/Logo blanco sin fondo.png" alt="logo-instituto">
+        </a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="institucional.html">Intitucional</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="separador-seccion">Nuestos canales de contacto</h2>
+        <div  class="vinculos-contacto">
+            <div class="vinculo-wsp">
+                <a href="https://api.whatsapp.com/send?phone=542612176852" target="_blank"><img src="imagenes/Vinculos/icono wsp negro.png" alt="icono-wsp" class="logo-red-social"></a>
+                <a href="https://api.whatsapp.com/send?phone=542612176852" target="_blank"><p>Whatsapp +54 261 217-6852</p></a>
+            </div>
+            <div class="vinculo-instagram">
+                <a href="https://www.instagram.com/windsoringles/?hl=es"target="_blank"><img src="imagenes/Vinculos/logo instagram negro.png" alt="logo-instagram" class="logo-red-social"></a>
+                <a href="https://www.instagram.com/windsoringles/?hl=es" target="_blank"><p>Instagram</p></a>
+            </div>
+            <div class="vinculo-facebook">
+                <a href="https://www.facebook.com/profile.php?id=100089041920280&mibextid=LQQJ4d"target="_blank"><img src="imagenes/Vinculos/icono facebook.png" alt="logo-facebook" class="logo-red-social"></a>
+                <a href="https://www.facebook.com/profile.php?id=100089041920280&mibextid=LQQJ4d" target="_blank"><p>Facebook</p></a>
+            </div>
+            
+        </div>
+        <h2 class="separador-seccion">Ubicación</h2>
+        <section class="section-ubicacion">
+            
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0512062480043!2d-68.729685942586!3d-32.9380020195025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0d5d5cf31e11%3A0xaa245b5fa4ab6362!2sInstituto%20de%20Ingl%C3%A9s%20Windsor!5e0!3m2!1ses-419!2sar!4v1710798005630!5m2!1ses-419!2sar" width="80%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <h2 class="separador-seccion">Dejanos tu consulta</h2>
+        <section class="section-contacto">
+            <form class="formulario-contacto">
+                <div class="div-formulario-contacto">
+                    <label for="nombre">Nombre y Apellido</label><br>
+                    <input id="nombre" name="nombre" type="text" required> <br>
+                    <label for="email">Email</label><br>
+                    <input id="email" name="email" type="email" required> <br>
+                    <label for="tel">Teléfono</label><br>
+                    <input id="tel" name="tel" type="tel"> <br>
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea id="mensaje" name="comment" cols="30" rows="5" required placeholder="Deje aquí su consulta..."></textarea><br>
+                    <fieldset>
+                        <legend>¿Cómo le gustaria que nos contactemos?</legend>
+        
+                        <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="email">Email</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono" value="telefono">Teléfono</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" checked value="whatsApp">WhatsApp</label>
+                        
+                    </fieldset>
+                </div>
+                <input id="boton-enviar" name="enviar" type="submit" value="Enviar" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagenes/Logo/Logo blanco sin fondo.png" alt="logo-intituto">
+        <div class="texto-footer">
+            <h2>Centro de enseñanza de inglés en Mendoza</h2>
+            <p>Innovadora metodología del idioma con enfoque holístico y bajo el método ®<a href="https://www.englishforbabies.com/" target="_blank">All English for Babies</a></p>
+        </div>
+        <div class="vinculo-red-social">
+            <a href="https://www.instagram.com/windsoringles/?hl=es"target="_blank"><img src="imagenes/Vinculos/logo instagram negro.png" alt="logo-instagram" class="logo-red-social"></a>
+            <a href="https://www.instagram.com/windsoringles/?hl=es" target="_blank"><p>Instagram</p></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
