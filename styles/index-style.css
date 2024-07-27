@@ -128,4 +128,103 @@ align-items: center;
 .tarjeta-producto img:hover{
     border-image: space;
 }
+
+/*------------ INICIO INSUMOS------------*/
+
+.section-insumos h3{
+    color:#09569a;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+.conteiner-texto{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.conteiner-items{
+    justify-content: center;
+}
+.conteiner-items p{
+    background-color: #E8E8E8;
+    color:#09569a;
+    width: 250px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px 0 0 10px;
+}
+.conteiner-box{
+    background-color: #09569a;
+    margin: 0 0 10px 0;
+    width: 70%;
+}
+
+/*------------ FIN INSUMOS------------*/
+
+/*------------ INICIO PROVEEDORES------------*/
+
+.section-proveedores{
+    background-color: #E8E8E8;
+    align-content: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+.section-proveedores h3{
+    font-size: 25px;
+    color: #09569a;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: 200ms;
+}
+
+.section-proveedores p{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.conteiner-proveedores a img{
+    height: 200px;
+    padding: 20px;
+    transition: 200ms;
+
+}
+
+.conteiner-proveedores{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-proveedores h3:hover{
+    font-weight: 800;
+}
+.conteiner-proveedores a img:hover{
+    background-color:white;
+    border-radius: 10px;
+}
+
+@media(max-width:991px){
+    .conteiner-proveedores{
+        display: inline-block;
+    }
+
+    .conteiner-proveedores a img{
+        height: 120px;
+        margin: 25px;
+        padding: 0;
+    }
+
+    .conteiner-proveedores a img:hover{
+        background-color: #E8E8E8;
+    }
+
+    .section-proveedores p{
+        display: none;
+    }
+}
 /*------------ FIN MAIN------------*/
