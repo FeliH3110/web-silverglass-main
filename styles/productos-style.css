@@ -58,8 +58,10 @@ h1{
     background-color: #E8E8E8;
     border-radius: 0 10px 10px 0;
 }
-
-.producto-caratula-texto button{
+.producto-caratula-texto a{
+    text-align: center;
+}
+.producto-caratula-texto a button{
     align-self: center;
     padding: 10px 30px;
     border: white solid 3px;
@@ -85,20 +87,49 @@ h1:hover{
 }
 
 .producto-caratula-texto button:hover{
-    align-self: center;
-    padding: 10px 30px;
     border: #09569a solid 3px;
-    border-radius: 10px;
     background-color: white;
     color: #09569a;
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
     font-weight: bold;
 }
 
 .producto-caratula-texto h2:hover{
     background-color: white;
 }
+
+.container-vinculos{
+    padding: 0 0 20px 0;
+    text-align: center;
+    align-content: center;
+}
+.container-vinculos p{
+    padding: 20px;
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 20px;
+}
+
+.container-vinculos a button{
+    height: 50px;
+    width: 20%;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #09569a;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    transition: 200ms;
+}
+
+.container-vinculos a button:hover{
+    border: #09569a solid 3px;
+    background-color: white;
+    color: #09569a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
 
 @media(max-width:991px){
     h1{
@@ -112,7 +143,11 @@ h1:hover{
     }
     .producto-caratula-texto h2{
         font-size: 20px;
-        padding: 0 0 10px 0;
+        margin: 0 0 10px 0;
+        align-content: center;
+        padding: 0;
+        width: 100%;
+        height:30px;
     }
     .producto-caratula{
         display: block;
@@ -133,5 +168,11 @@ h1:hover{
         align-self: center;
         padding: 5px 15px;
         font-size: 15px;
+    }
+    .container-vinculos p{
+        padding: 20px 0;
+    }
+    .container-vinculos a button{
+        width: 70%;
     }
 }

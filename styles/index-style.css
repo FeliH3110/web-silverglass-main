@@ -89,6 +89,7 @@ align-items: center;
 
 .tarjeta-producto h3 a{
     color: white;
+    transition: 200ms;
 }
 
 .tarjeta-producto h3{
@@ -123,7 +124,7 @@ align-items: center;
 }
 
 .tarjeta-producto h3 a:hover{
-    font-weight: bold;
+    font-weight: 800;
 }
 .tarjeta-producto img:hover{
     border-image: space;
