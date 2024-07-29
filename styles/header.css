@@ -37,6 +37,7 @@ header{
     text-transform: uppercase;
     text-align: center;
     width: 140px;
+    transition: 200ms;
 }
 
 .menu .navbar ul li a:hover{

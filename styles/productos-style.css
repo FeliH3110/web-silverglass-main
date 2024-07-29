@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none; 
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ------MAIN------- */
+
+main{
+    padding: 20px;
+}
+
+h1{
+    font-size: 30px;
+    background-color: #09569a;
+    color: white;
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: 200ms;
+}
+#descripcion-titulo{
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.producto-caratula{
+    display: flex;
+    margin-bottom: 20px;
+    height:100%;
+}
+
+.producto-caratula img{
+    height: auto;
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+}
+
+.producto-caratula-texto{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E8E8E8;
+    border-radius: 0 10px 10px 0;
+}
+
+.producto-caratula-texto button{
+    align-self: center;
+    padding: 10px 30px;
+    border: white solid 3px;
+    border-radius: 10px;
+    background-color: #09569a;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    transition: 200ms;
+}
+.producto-caratula-texto h2{
+    color: #09569a;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+h1:hover{
+    font-weight: 700;
+}
+
+.producto-caratula-texto button:hover{
+    align-self: center;
+    padding: 10px 30px;
+    border: #09569a solid 3px;
+    border-radius: 10px;
+    background-color: white;
+    color: #09569a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.producto-caratula-texto h2:hover{
+    background-color: white;
+}
+
+@media(max-width:991px){
+    h1{
+        font-size: 20px;
+        height: 40px;
+        width: 350px;
+    }
+    #descripcion-titulo{
+        text-align: center;
+        font-size: 15px;
+    }
+    .producto-caratula-texto h2{
+        font-size: 20px;
+        padding: 0 0 10px 0;
+    }
+    .producto-caratula{
+        display: block;
+    }
+    .producto-caratula img{
+        height: 60%;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .producto-caratula-texto{
+        border-radius: 0 0 10px 10px;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .producto-caratula-texto button{
+        margin-top: 10px;
+        align-self: center;
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+}
