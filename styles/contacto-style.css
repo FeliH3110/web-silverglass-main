@@ -1,241 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none; 
+}
+
 body{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-/*------------HEADER------------*/
-
-header{
-    display: flex;
-    min-height: 150px;
-    background: #06534D;
-    justify-content: space-between;
-    align-items: center;
-    padding:5px;
+/* --------INICIO MAIN------- */
+main{
+    padding: 20px;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo img{
-    height: 200px;
-    margin-left: 20px;
-}
-
-header nav a{
-    font-size:35px;
-    padding-right:40px;
-    transition: 200ms;
-    text-decoration: none;
-    color: black;
-}
-
-header nav a:hover{
-    color: #F8F1D8;
-    text-shadow:black;
-    text-shadow: 100px;
-}
-
-/*configuracion responsive para pantallas pequeñas*/
-@media (max-width: 700px){
-    header{
-        flex-direction: column;
-    }
-
-    header nav{
-        padding-bottom: 0;
-        padding-top: 10px;
-    }
-}
-
-/*------------ FIN HEADER------------*/
-/*------------ MAIN------------*/
-
-.separador-seccion{
-    align-items: center;
-    text-align: center;
-    font-size: 30px;
-    background-color: #F8F1D8;
+h1{
+    font-weight: 400;
+    font-size:30px;
+    background-color: #09569a;
+    color: white;
     height: 50px;
-    margin: 20px 0 20px 0;
-    padding-top: 20px;
+    width: 350px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: 200ms;
 }
 
-.separador-seccion:hover{
-    letter-spacing: 5px;
-    transition: 400ms;
-    transition-delay: 500ms;
+h1:hover{
+    font-weight: 700;
 }
 
-.vinculos-contacto{
-    background: url(imagenes/Instituto/pexels-fwstudio-129731.jpg);
-    display: flex;
+#descripcion-titulo{
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+h2{
+    padding: 20px;
+}
+.container-contacto{
+    align-content: center;
+    text-align: center;
+}
+.div-vinculos{
+    background-color: #09569a;
+    border-radius: 10px;
     align-items: center;
-    justify-content:space-evenly;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+.vinculo-contacto{
+    text-align:center;
+    align-content: center;
+}
+.vinculo-contacto img{
+    width: 75px;
+    padding: 10px;
+    transition: 200ms;
 }
 
-.vinculo-wsp, .vinculo-instagram, .vinculo-facebook{
+.vinculo-contacto a p{
+    font-size: 20px;
+    color:white;
+    transition: 200ms;
+    width: 350px;
+    text-align: center;
+}
+
+.vinculo-contacto a{
+    width: 300px;
+}
+
+.vinculo-contacto img:hover{
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+.vinculo-contacto p:hover{
+    font-weight: bold;
+}
+
+.container-horarios{
+    text-align: center;
+    margin: 20px;
+}
+
+
+.container-horarios h3{
+    padding: 20px 0 10px 0;
+    font-size: 20px;
+    color: #09569a;
+}
+.container-horarios img{
+    width: 3%;
+}
+
+.container-horarios p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container-ubicacion{
     margin: 20px;
     text-align: center;
 }
 
-.vinculo-wsp img, .vinculo-instagram img, .vinculo-facebook img{
-    margin-bottom: 10px;
-    height: 60px;
-    
+.container-ubicacion img{
+    width: 3%;
 }
 
-.vinculo-wsp a, .vinculo-instagram a, .vinculo-facebook a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-
-main .logo-red-social:hover{
-    height: 70px;
-    transition: 300ms;
-}
-
-.vinculo-wsp a:hover, .vinculo-instagram a:hover, .vinculo-facebook a:hover{
-    font-weight: bold;
-    transition: 300ms;
-}
-
-/*.mapa{
-    margin-bottom: 310px;
-}*/
-
-iframe{
-    justify-content: center;
-    margin-left: 10%;
-    margin-bottom: 30px;
-}
-
-.formulario-contacto{
+.container-ubicacion p{
     padding: 20px;
-    margin: 20px auto;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid #06534D;
-    width: 70%;
-} 
-
-.formulario-contacto:hover{
-    border: 2px solid #06534D;
-    transition: 300ms;
-    background-color: #F8F1D8;
-} 
-
-label{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-#boton-enviar{
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    background-color: #06534D;
-    color: #F8F1D8;
-    width: 30%;
-    height: 30px;
-    border-radius: 10px;
-    margin-top: 30px;
-}
+@media(max-width:991px){
+    main{
+        padding: 10px 0;
+    }
+    .div-vinculos{
+        display: block;
+        border-radius: 0;
+    }
+    .vinculo-contacto{
+        margin: 10px 0;
+    }
+    #descripcion-titulo{
+        text-align: center;
+    }
 
-#boton-enviar:hover{
-    color: #06534D;
-    background-color: #F8F1D8;
-    transition: 300ms;
-}
+    h1{
+        margin: auto;
+        font-size: 20px;
+        height: 40px;
+        width: 350px;
+    }
+    .container-horarios img{
+        width: 10%;
+    }
 
-.div-formulario-contacto > input,.div-formulario-contacto > textarea{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 90%;
-    font-size: 15px;
-    border-radius: 10px;
+    .container-ubicacion img{
+        width: 12%;
+    }
 }
-
-.div-formulario-contacto > input{
-    height: 30px;
-}
-
-.div-formulario-contacto fieldset legend{
-    margin-bottom: 10px;
-}
-
-/*------------ FIN MAIN------------*/
-
-/*------------FOOTER------------*/
-footer{
-    display: flex;
-    min-height: 150px;
-    background: #06534D;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-}
-
-footer img{
-    height: 100px;
-    display: flex;
-    margin-left: 30px;
-}
-
-.texto-footer h2{
-    font-size: 25px;
-    font-weight: bold;
-    color: #F8F1D8
-}
-
-.texto-footer p{
-    color: #F8F1D8
-}
-
-.texto-footer p a{
-    text-decoration: none;
-    color:#F8F1D8;
-}
-
-.texto-footer p a:hover{
-    font-weight: bold;
-    transition: 300ms;
-}
-
-.texto-footer{
-    width: auto;
-    align-items: center;
-    text-align: center;
-    line-height: 30px
-}
-
-.logo-red-social{
-    height: 50px;
-}
-
-.vinculo-red-social{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-right: 30px;
-}
-footer .logo-red-social:hover{
-    filter: invert(89%) sepia(30%) saturate(277%) hue-rotate(327deg) brightness(107%) contrast(94%);
-    transition: 300ms;
-}
-
-footer .vinculo-red-social a{
-    font-size:20px;
-    padding-right:10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-footer a:hover{
-    color: #F8F1D8;
-    transition: 300ms;
-}
-/*------------ FIN FOOTER------------*/
