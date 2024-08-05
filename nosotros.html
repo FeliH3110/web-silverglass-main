@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Institucional</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles/nosotros-style.css">
-    <link rel="shortcut icon" href="imagenes/Icono pestaña/Icono bandera sin fondo.png" />
-
-
+    <link rel="stylesheet" href="/styles/nosotros-style.css">
+    <link rel="shortcut icon" href="img/icono pestaña/logo pestañas.png" />
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
     <!--Importacion fuente personalizada-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,55 +16,85 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <img src="imagenes/Logo/Logo blanco sin fondo.png" alt="logo-instituto">
-        </a>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="institucional.html">Intitucional</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div class="menu container">
+            <a href="index.html" class="logo"><img src="img/logo/logoFondoAzul.jpg" alt="logo-silver-glass"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/vinculos/menu blanco.png" class="menu-icono" alt="icono-menu">
+            </label>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+        
+                    <li><a href="productos.html">Productos</a>
+                        <ul>
+                            <li class="submenu"><a href="producto-abertura.html">aberturas</a></li>
+                            <li class="submenu"><a href="producto-baranda.html">barandas</a></li>
+                            <li class="submenu"><a href="producto-mampara.html">mamparas</a></li>
+                            <li class="submenu"><a href="producto-espejo.html">espejos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a id="nav-presupuesto" href="pedirPresupuesto.html">PEDIR PRESUPUESTO</a></li>
+                </ul> 
+            </nav>
+        </div>
     </header>
     <main>
-        <div class="equipo-integrante" id="integrante-izquierda">
-            <img src="imagenes/Equipo/griselda.jpg" alt="imagen-director">
-            <div class="equipo-integrante-texto">
-                <h2>Griselda Moreno</h2>
-                <p>Owner & Director</p>
-            </div> 
+        <div class="container-encabezado">
+            <img id="imagen-vidrio" src="img/nosotros/low-angle-building-with-large-windows.jpg" alt="">
+            <div class="texto-encabezado">
+                <h1>Silver Glass</h1>
+                <p>Corazón de vidrio y aluminio</p>
+            </div>
+            <img id="imagen-aluminio" src="img/nosotros/silver-metallic-textured-background.jpg" alt="">
         </div>
-        <div class="equipo-integrante">
-            <div class="equipo-integrante-texto" id="integrante-derecha">
-                <h2>Josefina  Rizzo</h2>
-                <p>Coordinadora Pedagógica</p>
-            </div> 
-            <img src="imagenes/Equipo/josefina.jpg" alt="imagen-integrante">
-        </div>
-
-        <div class="equipo-integrante">
-            <img src="imagenes/Instituto/pexels-fwstudio-129731.jpg" alt="imagen-integrante">
-            <div class="equipo-integrante-texto" id="integrante-derecha">
-                <h2>xxx xxx</h2>
-                <p>Coordinadora de Proyectos</p>
-            </div> 
-        </div>
-        <div class="equipo">
-            <img src="imagenes/Equipo/equipo.jpg" alt="imagen-director">
-        </div>
-    
+        <section class="section-texto">
+            <div class="container-texto">
+                <img src="img/nosotros/portrait-male-carpenter-wearing-ear-defender-working-workshop.jpg" alt="persona-trabajando">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, nostrum vel a sint nobis soluta neque quas aut debitis molestias voluptatibus repudiandae excepturi, aspernatur earum magni nulla deserunt, sed dolore.</p>
+            </div>
+            <div class="container-texto">
+                <img src="img/nosotros/portrait-male-carpenter-wearing-ear-defender-working-workshop.jpg" alt="persona-trabajando">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, nostrum vel a sint nobis soluta neque quas aut debitis molestias voluptatibus repudiandae excepturi, aspernatur earum magni nulla deserunt, sed dolore.</p>
+            </div>
+            <div class="container-texto">
+                <img src="img/nosotros/portrait-male-carpenter-wearing-ear-defender-working-workshop.jpg" alt="persona-trabajando">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, nostrum vel a sint nobis soluta neque quas aut debitis molestias voluptatibus repudiandae excepturi, aspernatur earum magni nulla deserunt, sed dolore.</p>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <img src="imagenes/Logo/Logo blanco sin fondo.png" alt="logo-intituto">
-        <div class="texto-footer">
-            <h2>Centro de enseñanza de inglés en Mendoza</h2>
-            <p>Innovadora metodología del idioma con enfoque holístico y bajo el método ®<a href="https://www.englishforbabies.com/" target="_blank">All English for Babies</a></p>
+        <div class="logo-footer">
+            <img src="img/Logo/logoFondoAzul.jpg" alt="logo-silver-glass"> 
         </div>
-        <div class="vinculo-red-social">
-            <a href="https://www.instagram.com/windsoringles/?hl=es"target="_blank"><img src="imagenes/Vinculos/logo instagram negro.png" alt="logo-instagram" class="logo-red-social"></a>
-            <a href="https://www.instagram.com/windsoringles/?hl=es" target="_blank"><p>Instagram</p></a>
+
+        <div class="contacto-footer">
+            <h3>INFORMACIÓN DE CONTACTO</h3>
+            <div class="vinculo-footer">
+                <a href="https://api.whatsapp.com/send?phone=2615168667" target="_blank"><img src="img/vinculos/icono whatsapp blanco.png" alt="icono-whatsapp"></a>
+                <a href="https://api.whatsapp.com/send?phone=2615168667" target="_blank"><p>+5492615168667</p></a>
+            </div>
+            <div class="vinculo-footer">
+                <a href="https://www.google.com/maps/place/Monte+Caseros+2626,+M5513+Coquimbito,+Mendoza/@-32.9562,-68.7445,17z/data=!4m6!3m5!1s0x967e0d0c0f340f63:0x96c61921c7e0e4a2!8m2!3d-32.9561697!4d-68.7444467!16s%2Fg%2F11s1rwllq_?hl=es&entry=ttu" target="_blank"><img src="img/vinculos/location blanco.png" alt="icono-maps"></a>
+                <a href="https://www.google.com/maps/place/Monte+Caseros+2626,+M5513+Coquimbito,+Mendoza/@-32.9562,-68.7445,17z/data=!4m6!3m5!1s0x967e0d0c0f340f63:0x96c61921c7e0e4a2!8m2!3d-32.9561697!4d-68.7444467!16s%2Fg%2F11s1rwllq_?hl=es&entry=ttu" target="_blank"><p>Monte Caseros 2626,Coquimbito,Mendoza</p></a>
+            </div>
+            <div class="vinculo-footer">
+                <a href="mailto:silverglass.ventas@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"><img src="img/vinculos/email blanco.png" alt="icono-correo"></a>
+                <a href="mailto:silverglass.ventas@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"><p>silverglass.ventas@gmail.com</p></a>
+            </div>
+            
+        </div>
+
+        <div class="productos-footer">
+            <h3>NUESTROS PRODUCTOS</h3>
+            <p><a href="producto-abertura.html">Aberturas</a></p>
+            <p><a href="producto-mampara.html">Mamparas</a></p>
+            <p><a href="producto-espejo.html">Espejos</a></p>
+            <p><a href="producto-baranda.html">Barandas</a></p>
         </div>
     </footer>
-    
 </body>
 </html>
