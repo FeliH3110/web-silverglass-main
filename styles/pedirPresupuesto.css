@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none; 
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ------MAIN------- */
+
+main{
+    padding: 20px;
+}
+
+h1{
+    font-weight: 400;
+    font-size:30px;
+    background-color: #09569a;
+    color: white;
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+h1:hover{
+    font-weight: 700;
+}
+
+#descripcion-titulo{
+    padding: 20px 0;
+    font-size:x-large;
+}
+
+@media(max-width:991px){
+    h1{
+        font-size: 20px;
+        height: 40px;
+        width: 350px;
+    }
+    #descripcion-titulo{
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+.container-general{
+    display: flex;
+}
+.container-pasos{
+    text-align: center;
+    padding: 2%;
+    width: 50%;
+}
+
+.container-pasos h2{
+    padding: 10px;
+}
+
+.container-texto h2{
+    color: #09569a;
+    font-size: xx-large;
+}
+
+.container-pasos p{
+    font-size: x-large;
+}
+
+
+/* -------------FORMULARIO---------- */
+.container-general{
+    justify-content: space-around;
+}
+iframe{
+    justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.formulario-contacto{
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #09569a;
+    width: 100%;
+} 
+
+.formulario-contacto:hover{
+    border: 2px solid #09569a;
+    transition: 300ms;
+    background-color: #e8e8e8;
+} 
+
+label{
+    font-size: 20px;
+}
+
+#boton-enviar{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    background-color: #09569a;
+    color: white;
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#boton-enviar:hover{
+    color: #09569a;
+    background-color: #F8F1D8;
+    transition: 300ms;
+}
+
+.div-formulario-contacto > input,.div-formulario-contacto > textarea{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.div-formulario-contacto > input{
+    height: 30px;
+}
+
+.div-formulario-contacto fieldset legend{
+    margin-bottom: 10px;
+}

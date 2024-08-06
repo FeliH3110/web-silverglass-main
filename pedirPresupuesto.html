@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presupuesto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/styles/pedirPresupuesto.css">
+    <link rel="shortcut icon" href="img/icono pestaña/logo pestañas.png" />
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <!--Importacion fuente personalizada-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div class="menu container">
+            <a href="index.html" class="logo"><img src="img/logo/logoFondoAzul.jpg" alt="logo-silver-glass"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/vinculos/menu blanco.png" class="menu-icono" alt="icono-menu">
+            </label>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li><a href="productos.html">Productos</a>
+                        <ul>
+                            <li class="submenu"><a href="producto-abertura.html">aberturas</a></li>
+                            <li class="submenu"><a href="producto-baranda.html">barandas</a></li>
+                            <li class="submenu"><a href="producto-mampara.html">mamparas</a></li>
+                            <li class="submenu"><a href="producto-espejo.html">espejos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a id="nav-presupuesto" href="pedirPresupuesto.html">PEDIR PRESUPUESTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Pedir Presupuesto</h1>
+        <p id="descripcion-titulo"><strong>En Silver Glass, entendemos que cada proyecto es único.</strong> Por eso,
+            ofrecemos presupuestos personalizados para asegurarnos de que recibas exactamente lo que necesitas, adaptado
+            a tus especificaciones y presupuesto.</p>
+        <div class="container-general">
+            <div class="container-pasos">
+                <h2>Nuestro proceso es simple:</h2>
+                <div class="container-texto">
+                    <h2>Completa el formulario</h2>
+                    <p>Proporciónanos los detalles de tu proyecto, incluyendo dimensiones, materiales preferidos y
+                        cualquier otra especificación relevante.</p>
+                </div>
+                <div class="container-texto">
+                    <h2>Asesoramiento personalizado</h2>
+                    <p>Nuestro equipo revisará tu solicitud y te proporcionará un asesoramiento detallado para optimizar
+                        tu elección.</p>
+                </div>
+                <div class="container-texto">
+                    <h2>Recibe tu presupuesto</h2>
+                    <p>En un breve plazo, recibirás un presupuesto detallado y competitivo, sin compromiso.</p>
+                </div>
+            </div>
+            <div class="container-formulario">
+                <form class="formulario-contacto">
+                    <div class="div-formulario-contacto">
+                        <label for="nombre">Nombre y Apellido*</label><br>
+                        <input id="nombre" name="nombre" type="text" required> <br>
+                        <label for="email">Email*</label><br>
+                        <input id="email" name="email" type="email" required> <br>
+                        <label for="tel">Teléfono</label><br>
+                        <input id="tel" name="tel" type="tel"><br>
+                        <legend>Ubicacion de la obra</legend>
+                        <label for="dep">Departamento*</label><br>
+                        <input id="dep" name="dep" type="text" required><br>
+                        <label for="loc">Localidad*</label><br>
+                        <input id="loc" name="loc" type="text"required><br>
+                        <fieldset>
+                            <legend>¿Sobre qué producto quiere recibir presupuesto?</legend>
+
+                            <label for="checkbox-abertura"><input type="checkbox" name="producto" id="checkbox-abertura">Abertura</label>
+
+                            <label for="checkbox-mampara"><input type="checkbox" name="producto" id="checkbox-mampara">Mampara</label>
+
+                            <label for="checkbox-baranda"><input type="checkbox" name="producto" id="checkbox-baranda">Barandas</label>
+
+                            <label for="checkbox-espejo"><input type="checkbox" name="producto" id="checkbox-espejo">Espejos</label>
+
+                        </fieldset><br>
+                        <fieldset>
+                            <legend>¿Cómo le gustaria que nos contactemos?</legend>
+
+                            <label for="radio-email"><input type="radio" name="contacto" id="radio-email"
+                                    value="email">Email</label>
+
+                            <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono"
+                                    value="telefono">Teléfono</label>
+
+                            <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" checked
+                                    value="whatsApp">WhatsApp</label>
+
+                        </fieldset><br>
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" name="comment" cols="30" rows="5" required
+                            placeholder="Información relevante..."></textarea><br>
+                    </div>
+                    <input id="boton-enviar" name="enviar" type="submit" value="Enviar" />
+                </form>
+
+            </div>
+        </div>
+
+    </main>
 </body>
+
 </html>
