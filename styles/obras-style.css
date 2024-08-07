@@ -43,3 +43,56 @@ h1:hover{
     padding: 20px 0;
     font-size: 18px;
 }
+
+
+/* ----------INICIO GALERIA---------- */
+
+.section-gallery h2{
+    text-align: center;
+    font-size: 30px;
+    color: #09569a;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-gallery .container{
+    width: 100%;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 8%;
+}
+
+.section-gallery .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:30px;
+}
+
+.section-gallery .gallery img{
+    width: 100%;
+}
+
+@media(max-width:991px){
+    /* .section-gallery .gallery a{
+        width: 50%;
+    } */
+    .section-gallery .container{
+        padding: 2%;
+    }
+
+    #descripcion-titulo{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 20px;
+        height: 40px;
+        width: 350px;
+    }
+
+}
+
+
+
+/* ----------FIN GALERIA---------- */
