@@ -50,8 +50,9 @@
         <p id="descripcion-titulo"><strong>En Silver Glass, entendemos que cada proyecto es único.</strong> Por eso,
             ofrecemos presupuestos personalizados para asegurarnos de que recibas exactamente lo que necesitas, adaptado
             a tus especificaciones y presupuesto.</p>
+            <h2>Formulario</h2>
         <div class="container-general">
-            <div class="container-pasos">
+            <!-- <div class="container-pasos">
                 <h2>Nuestro proceso es simple:</h2>
                 <div class="container-texto">
                     <h2>Completa el formulario</h2>
@@ -67,57 +68,105 @@
                     <h2>Recibe tu presupuesto</h2>
                     <p>En un breve plazo, recibirás un presupuesto detallado y competitivo, sin compromiso.</p>
                 </div>
-            </div>
+            </div> -->
             <div class="container-formulario">
-                <form class="formulario-contacto">
+                <form class="formulario-contacto" action="https://formsubmit.co/db79cfe56185a2c38673dedfc4eafef8" method="POST" id="miFormulario">
                     <div class="div-formulario-contacto">
-                        <label for="nombre">Nombre y Apellido*</label><br>
-                        <input id="nombre" name="nombre" type="text" required> <br>
-                        <label for="email">Email*</label><br>
-                        <input id="email" name="email" type="email" required> <br>
-                        <label for="tel">Teléfono</label><br>
-                        <input id="tel" name="tel" type="tel"><br>
-                        <legend>Ubicacion de la obra</legend>
-                        <label for="dep">Departamento*</label><br>
-                        <input id="dep" name="dep" type="text" required><br>
-                        <label for="loc">Localidad*</label><br>
-                        <input id="loc" name="loc" type="text"required><br>
-                        <fieldset>
-                            <legend>¿Sobre qué producto quiere recibir presupuesto?</legend>
+                        <div class="datos-cliente">
+                            <legend>Datos de contacto</legend>
+                            <!-- <label for="nombre">Nombre y Apellido*</label><br> -->
+                            <input id="nombre" name="Nombre y Apellido" type="text" required placeholder="Nombre y Apellido"> <br>
+                            <!-- <label for="email">Email*</label><br> -->
+                            <input id="email" name="Email" type="email" required placeholder="Email"> <br>
+                            <!-- <label for="tel">Teléfono</label><br> -->
+                            <input id="tel" name="Teléfono" type="tel" placeholder="Teléfono"><br>
+                            <legend>Ubicacion de la obra</legend>
+                            <!-- <label for="dep">Departamento*</label><br> -->
+                            <input id="dep" name="Departamento de la obra" type="text" required placeholder="Departamento"><br>
+                            <!-- <label for="loc">Localidad*</label><br> -->
+                            <input id="loc" name="Localidad de la obra" type="text" required placeholder="Localidad"><br>
+                            <legend>Adjuntar planos de la obra</legend>
+                            <input type="file" id="exampleFile" name="Archivo Adjunto">
+                        </div>
+                        <div class="datos-obra">
+                            <fieldset>
+                                <legend>¿Sobre qué producto quiere recibir presupuesto?</legend>
 
-                            <label for="checkbox-abertura"><input type="checkbox" name="producto" id="checkbox-abertura">Abertura</label>
+                                <label for="checkbox-abertura"><input type="checkbox" name="Presupuesto para Abertura"
+                                        id="checkbox-abertura">Abertura</label>
 
-                            <label for="checkbox-mampara"><input type="checkbox" name="producto" id="checkbox-mampara">Mampara</label>
+                                <label for="checkbox-mampara"><input type="checkbox" name="Presupuesto para Mampara"
+                                        id="checkbox-mampara">Mampara</label>
 
-                            <label for="checkbox-baranda"><input type="checkbox" name="producto" id="checkbox-baranda">Barandas</label>
+                                <label for="checkbox-baranda"><input type="checkbox" name="Presupuesto para Baranda"
+                                        id="checkbox-baranda">Barandas</label>
 
-                            <label for="checkbox-espejo"><input type="checkbox" name="producto" id="checkbox-espejo">Espejos</label>
+                                <label for="checkbox-espejo"><input type="checkbox" name="Presupuesto para Espejo"
+                                        id="checkbox-espejo">Espejos</label>
 
-                        </fieldset><br>
-                        <fieldset>
-                            <legend>¿Cómo le gustaria que nos contactemos?</legend>
+                            </fieldset><br>
+                            <fieldset>
+                                <legend>¿Cómo le gustaria que nos contactemos?</legend>
 
-                            <label for="radio-email"><input type="radio" name="contacto" id="radio-email"
-                                    value="email">Email</label>
+                                <label for="radio-email"><input type="radio" name="Contacto por email" id="radio-email"
+                                        value="email">Email</label>
 
-                            <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono"
-                                    value="telefono">Teléfono</label>
+                                <label for="radio-telefono"><input type="radio" name="Contacto por telefono" id="radio-telefono"
+                                        value="telefono">Teléfono</label>
 
-                            <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" checked
-                                    value="whatsApp">WhatsApp</label>
+                                <label for="radio-whatsapp"><input type="radio" name="Contacto por whatsapp" id="radio-whatsapp"
+                                        checked value="whatsApp">WhatsApp</label>
 
-                        </fieldset><br>
-                        <label for="mensaje">Mensaje</label><br>
-                        <textarea id="mensaje" name="comment" cols="30" rows="5" required
-                            placeholder="Información relevante..."></textarea><br>
+                            </fieldset><br>
+                            <label for="mensaje">Mensaje</label><br>
+                            <textarea id="mensaje" name="Mensaje con informacion relevante" cols="50" rows="5" required
+                                placeholder="Información relevante..."></textarea><br>
+
+                            <input id="boton-enviar" name="Enviar" type="submit" value="Enviar" />
+                        </div>
+
+
+
                     </div>
-                    <input id="boton-enviar" name="enviar" type="submit" value="Enviar" />
+                    <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/pedirPresupuesto.html"> -->
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
-
+                <div id="mensajeExito" class="hidden">¡El formulario ha sido enviado con éxito!</div>
             </div>
         </div>
 
     </main>
+    <script src="pedirPresupuesto.js"></script>
+    <footer>
+        <div class="logo-footer">
+            <img src="img/Logo/logoFondoAzul.jpg" alt="logo-silver-glass"> 
+        </div>
+
+        <div class="contacto-footer">
+            <h3>INFORMACIÓN DE CONTACTO</h3>
+            <div class="vinculo-footer">
+                <a href="https://api.whatsapp.com/send?phone=2615168667" target="_blank"><img src="img/vinculos/icono whatsapp blanco.png" alt=""></a>
+                <a href="https://api.whatsapp.com/send?phone=2615168667" target="_blank"><p>+5492615168667</p></a>
+            </div>
+            <div class="vinculo-footer">
+                <a href="https://www.google.com/maps/place/Monte+Caseros+2626,+M5513+Coquimbito,+Mendoza/@-32.9562,-68.7445,17z/data=!4m6!3m5!1s0x967e0d0c0f340f63:0x96c61921c7e0e4a2!8m2!3d-32.9561697!4d-68.7444467!16s%2Fg%2F11s1rwllq_?hl=es&entry=ttu" target="_blank"><img src="img/vinculos/location blanco.png" alt=""></a>
+                <a href="https://www.google.com/maps/place/Monte+Caseros+2626,+M5513+Coquimbito,+Mendoza/@-32.9562,-68.7445,17z/data=!4m6!3m5!1s0x967e0d0c0f340f63:0x96c61921c7e0e4a2!8m2!3d-32.9561697!4d-68.7444467!16s%2Fg%2F11s1rwllq_?hl=es&entry=ttu" target="_blank"><p>Monte Caseros 2626,Coquimbito,Mendoza</p></a>
+            </div>
+            <div class="vinculo-footer">
+                <a href="mailto:silverglass.ventas@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"><img src="img/vinculos/email blanco.png" alt=""></a>
+                <a href="mailto:silverglass.ventas@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail"><p>silverglass.ventas@gmail.com</p></a>
+            </div>
+            
+        </div>
+
+        <div class="productos-footer">
+            <h3>NUESTROS PRODUCTOS</h3>
+            <p><a href="producto-abertura.html">Aberturas</a></p>
+            <p><a href="producto-mampara.html">Mamparas</a></p>
+            <p><a href="producto-espejo.html">Espejos</a></p>
+            <p><a href="producto-baranda.html">Barandas</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

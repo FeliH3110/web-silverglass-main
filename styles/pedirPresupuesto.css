@@ -39,9 +39,14 @@ h1:hover{
     font-weight: 700;
 }
 
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
 #descripcion-titulo{
     padding: 20px 0;
-    font-size:x-large;
+    font-size:18px;
 }
 
 @media(max-width:991px){
@@ -56,37 +61,10 @@ h1:hover{
     }
 }
 
-.container-general{
-    display: flex;
-}
-.container-pasos{
-    text-align: center;
-    padding: 2%;
-    width: 50%;
-}
-
-.container-pasos h2{
-    padding: 10px;
-}
-
-.container-texto h2{
-    color: #09569a;
-    font-size: xx-large;
-}
-
-.container-pasos p{
-    font-size: x-large;
-}
-
-
 /* -------------FORMULARIO---------- */
-.container-general{
-    justify-content: space-around;
-}
-iframe{
+.container-formulario{
+    display: flex;
     justify-content: center;
-    margin-left: 10%;
-    margin-bottom: 30px;
 }
 
 .formulario-contacto{
@@ -94,18 +72,71 @@ iframe{
     text-align: center;
     border-radius: 10px;
     border: 2px solid #09569a;
-    width: 100%;
 } 
 
 .formulario-contacto:hover{
-    border: 2px solid #09569a;
-    transition: 300ms;
-    background-color: #e8e8e8;
+    transition: 200ms ease;
 } 
 
-label{
-    font-size: 20px;
+.div-formulario-contacto{
+    display: flex;
+    justify-content: center;
 }
+
+.datos-cliente input{
+    background-color: #e8e8e8;
+    color-scheme: white;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#exampleFile{
+    padding: 7px 10px 10px 10px;
+    border: black solid 2px;
+}
+
+.datos-obra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.datos-obra fieldset{
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
+.datos-obra fieldset legend{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#mensaje{
+    border-radius: 10px;
+    padding: 10px;
+}
+.datos-obra fieldset label{
+    padding: 20px;
+}
+
+.datos-obra fieldset input{
+    margin: 0 10px;
+}
+
+#radio-email, #radio-whatsapp, #radio-telefono, #checkbox-abertura, #checkbox-mampara, #checkbox-espejo, #checkbox-baranda{
+    cursor: pointer;
+}
+
 
 #boton-enviar{
     font-family: "Montserrat", sans-serif;
@@ -113,29 +144,46 @@ label{
     background-color: #09569a;
     color: white;
     width: 30%;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #boton-enviar:hover{
     color: #09569a;
-    background-color: #F8F1D8;
+    background-color: white;
     transition: 300ms;
+    cursor: pointer;
 }
 
-.div-formulario-contacto > input,.div-formulario-contacto > textarea{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 90%;
-    font-size: 15px;
-    border-radius: 10px;
+.hidden {
+    display: none;
 }
 
-.div-formulario-contacto > input{
-    height: 30px;
+#mensajeExito {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
 }
 
-.div-formulario-contacto fieldset legend{
-    margin-bottom: 10px;
+@media(max-width:991px){
+    .div-formulario-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-formulario{
+        width: 100%;
+    }
+    .datos-obra fieldset{
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .datos-obra fieldset label{
+        padding: 0;
+    }
+    #mensaje{
+        
+    }
 }

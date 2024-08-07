@@ -198,6 +198,7 @@ h1:hover{
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     transition: 200ms;
+    cursor: pointer;
 }
 
 .container-vinculos a button:hover{

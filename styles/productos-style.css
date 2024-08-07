@@ -50,12 +50,19 @@ h1:hover{
     height:100%;
 }
 
-.producto-caratula img{
-    height: auto;
-    width: 40%;
+.producto-caratula a img{
+    width: 100%;
     border-radius: 10px 0 0 10px;
 }
 
+#enlace-producto{
+    width: 700px;
+    height: 100%;
+    transition: 300ms ease;
+}
+#enlace-producto:hover{
+    transform: scale(1.01);
+}
 .producto-caratula-texto{
     padding: 20px;
     display: flex;
@@ -94,6 +101,7 @@ h1:hover{
     color: #09569a;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .producto-caratula-texto h2:hover{
@@ -130,6 +138,7 @@ h1:hover{
     color: #09569a;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -176,6 +185,10 @@ h1:hover{
     }
     .container-vinculos a button{
         width: 70%;
+    }
+    #enlace-producto{
+        border-radius: 10px 10px 0 0;
+        width: 100%;
     }
 }
 
