@@ -59,6 +59,7 @@ h1:hover{
     width: 700px;
     height: 100%;
     transition: 300ms ease;
+    padding: auto;
 }
 #enlace-producto:hover{
     transform: scale(1.01);
