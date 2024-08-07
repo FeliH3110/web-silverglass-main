@@ -3,28 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style:none; 
+    list-style: none;
 }
-body{
+
+body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
+
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* ------MAIN------- */
 
-main{
+main {
     padding: 20px;
 }
 
-h1{
+h1 {
     font-weight: 400;
-    font-size:30px;
+    font-size: 30px;
     background-color: #09569a;
     color: white;
     height: 50px;
@@ -35,55 +36,56 @@ h1{
     transition: 200ms;
 }
 
-h1:hover{
+h1:hover {
     font-weight: 700;
 }
 
-h2{
+h2 {
     text-align: center;
     padding: 10px;
 }
 
-#descripcion-titulo{
+#descripcion-titulo {
     padding: 20px 0;
-    font-size:18px;
+    font-size: 18px;
 }
 
-@media(max-width:991px){
-    h1{
+@media(max-width:991px) {
+    h1 {
         font-size: 20px;
         height: 40px;
         width: 350px;
     }
-    #descripcion-titulo{
+
+    #descripcion-titulo {
         text-align: center;
         font-size: 15px;
     }
 }
 
 /* -------------FORMULARIO---------- */
-.container-formulario{
+.container-formulario {
     display: flex;
     justify-content: center;
 }
 
-.formulario-contacto{
+.formulario-contacto {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     border: 2px solid #09569a;
-} 
+}
 
-.formulario-contacto:hover{
+.formulario-contacto:hover {
     transition: 200ms ease;
-} 
+}
 
-.div-formulario-contacto{
+.div-formulario-contacto {
     display: flex;
     justify-content: center;
 }
 
-.datos-cliente input{
+.datos-cliente input {
     background-color: #e8e8e8;
     color-scheme: white;
     color: black;
@@ -96,12 +98,12 @@ h2{
     border-radius: 10px;
 }
 
-#exampleFile{
+#exampleFile {
     padding: 7px 10px 10px 10px;
     border: black solid 2px;
 }
 
-.datos-obra{
+.datos-obra {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,36 +111,44 @@ h2{
     align-items: center;
 }
 
-.datos-obra fieldset{
+.datos-obra fieldset {
     padding: 10px;
     background-color: #e8e8e8;
     border-radius: 10px;
 }
 
-.datos-obra fieldset legend{
+.datos-obra fieldset legend {
     padding: 5px 10px;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
 }
-#mensaje{
+
+#mensaje {
     border-radius: 10px;
     padding: 10px;
 }
-.datos-obra fieldset label{
+
+.datos-obra fieldset label {
     padding: 20px;
 }
 
-.datos-obra fieldset input{
+.datos-obra fieldset input {
     margin: 0 10px;
 }
 
-#radio-email, #radio-whatsapp, #radio-telefono, #checkbox-abertura, #checkbox-mampara, #checkbox-espejo, #checkbox-baranda{
+#radio-email,
+#radio-whatsapp,
+#radio-telefono,
+#checkbox-abertura,
+#checkbox-mampara,
+#checkbox-espejo,
+#checkbox-baranda {
     cursor: pointer;
 }
 
 
-#boton-enviar{
+#boton-enviar {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     background-color: #09569a;
@@ -149,7 +159,7 @@ h2{
     margin-top: 10px;
 }
 
-#boton-enviar:hover{
+#boton-enviar:hover {
     color: #09569a;
     background-color: white;
     transition: 300ms;
@@ -166,24 +176,41 @@ h2{
     color: green;
 }
 
-@media(max-width:991px){
-    .div-formulario-contacto{
+@media(max-width:991px) {
+    .div-formulario-contacto {
         display: flex;
         flex-direction: column;
-    }
-
-    .container-formulario{
         width: 100%;
     }
-    .datos-obra fieldset{
-        border-radius: 0;
+
+    .container-formulario {
+        width: 100%;
+    }
+
+    .datos-obra fieldset {
         display: flex;
         justify-content: center;
+        width: 350px;
     }
-    .datos-obra fieldset label{
+
+    .datos-obra fieldset label {
         padding: 0;
     }
-    #mensaje{
-        
+
+    #mensaje {
+        width: 100%;
+    }
+
+    .formulario-contacto {
+        width: 100%;
+        border-radius: 0;
+        border: 1px 0 solid #09569a;
+    }
+
+    main {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
