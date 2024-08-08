@@ -77,7 +77,7 @@ h1:hover{
 .producto-caratula-texto a button{
     align-self: center;
     padding: 10px 30px;
-    border: white solid 3px;
+    border: #e8e8e8 solid 3px;
     border-radius: 10px;
     background-color: #09569a;
     color: white;
@@ -85,6 +85,24 @@ h1:hover{
     font-size: 18px;
     transition: 200ms;
 }
+.producto-caratula-texto p{
+    line-height:30px;
+}
+/* -----TEXTO TARJETA----------- */
+.texto-encabezado{
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: large;
+    text-align: center;
+}
+.texto-titulo{
+    font-weight: bold;
+}
+.texto-titulo::after{
+    content: ":";
+}
+
+/* -----FIN TEXTO TARJETA----------- */
 .producto-caratula-texto h2{
     color: #09569a;
     font-size: 30px;
@@ -189,6 +207,16 @@ h1:hover{
     #enlace-producto{
         border-radius: 10px 10px 0 0;
         width: 100%;
+    }
+
+    .texto-descripcion{
+        display: none;
+    }
+    .texto-titulo::after{
+        content: "";
+    }
+    .texto-encabezado{
+        display: none;
     }
 }
 
