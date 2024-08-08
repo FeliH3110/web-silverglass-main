@@ -127,6 +127,7 @@ h2 {
 #mensaje {
     border-radius: 10px;
     padding: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .datos-obra fieldset label {
@@ -177,6 +178,9 @@ h2 {
 }
 
 @media(max-width:991px) {
+    h1{
+        margin: 0 10px;
+    }
     .div-formulario-contacto {
         display: flex;
         flex-direction: column;
@@ -209,8 +213,6 @@ h2 {
 
     main {
         padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
     }
 }
